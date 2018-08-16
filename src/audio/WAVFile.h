@@ -62,7 +62,7 @@ struct WAVFile
             {
                 left.push_back(*reinterpret_cast<T*>(&rawData[i]));
             }
-            if(is_right % 2 == 1)
+            else
             {
                 right.push_back(*reinterpret_cast<T*>(&rawData[i]));
             }
