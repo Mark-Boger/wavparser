@@ -210,12 +210,12 @@ TEST_F(AWAVParser, CanReadBitRawData)
     ASSERT_THAT(wav.rawData, Eq(rData));
 }
 
-TEST_F(AWAVParser, breakItAllCrushYourHopes)
+TEST_F(AWAVParser, CrushYourHopes)
 {
     ASSERT_READS_FILE("../tests/data/test_audio.wav");
 }
 
-TEST_F(AWAVParser, breakItAllCrushYourHopesAgain)
+TEST_F(AWAVParser, CrushYourHopesAgain)
 {
     ASSERT_READS_FILE("../tests/data/test_audio2.wav");
 }

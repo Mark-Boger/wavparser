@@ -7,6 +7,7 @@ WAVFile WAVParser::parse(std::istream &inp)
     auto data   = Parse<Data>(inp);
     auto raw    = ParseRaw(inp, data.chunkSize);
 
+    
     return WAVFile{header, fmt, data, raw};
 }
 
